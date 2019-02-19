@@ -1,0 +1,10 @@
+Comandos git para subir proyecto a github
+1-Crear proyecto en eclipse, de maven
+2-Crear un repositorio en github
+3-Abrir el Git bash en la carpeta donde se guardó mi proyecto
+4-Comandos git:
+$ git init
+$ git remote add origin https://github.com/moiAbarca/gitPrueba1.git
+$ git add .
+$ git commit -m "first commit"
+$ git push -u origin master
