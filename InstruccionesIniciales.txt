@@ -9,7 +9,10 @@ $ git add .
 $ git commit -m "first commit"
 $ git push -u origin master
 
+*Agregar dependencias al pom
+
 Para nuevos push al repositorio de github:
 $ git add .
 $ git commit -m "first commit"
 $ git push -u origin master
+
