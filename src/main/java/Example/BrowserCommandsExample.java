@@ -1,17 +1,22 @@
 package Example;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 import java.nio.file.Paths;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserCommandsExample {
 
     public static void main(String[] args) throws Exception {
-        String path = Paths.get(System.getProperty("user.dir"), "Driver/chromedriver.exe").toString();
-        System.setProperty("webdriver.chrome.driver", path);
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.google.cl/");
+        //String path = Paths.get(System.getProperty("user.dir"), "Driver//gitPrueba1/Driver/chromedriverMac").toString();
+        //System.setProperty("webdriver.chrome.driver", path);
+        //WebDriver driver = new ChromeDriver();
+    	
+    	WebDriver driver = new ChromeDriver();
+    	
+        driver.get("https://www.yapo.cl/");
         String tittle = driver.getTitle();
         String currentUrl = driver.getCurrentUrl();
         String pageSource = driver.getPageSource();
