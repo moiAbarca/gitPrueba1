@@ -8,15 +8,19 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.nio.file.Paths;
 import java.util.List;
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 public class FindElementsExample {
 
     private final static String url = "https://www.yapo.cl/";
 
     public static void main(String[] args) throws Exception {
-        String path = Paths.get(System.getProperty("user.dir"), "Driver/chromedriver.exe").toString();
-        System.setProperty("webdriver.chrome.driver", path);
-        WebDriver driver = new ChromeDriver();
+    	//encontrar elementos, un DropDownList
+    	
+        //String path = Paths.get(System.getProperty("user.dir"), "Driver/chromedriver.exe").toString();
+        //System.setProperty("webdriver.chrome.driver", path);
+        
+    	WebDriver driver = new ChromeDriver();
         driver.get(url);
         Thread.sleep(2000);
         WebElement btnPublicar;

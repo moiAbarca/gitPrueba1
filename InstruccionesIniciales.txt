@@ -1,7 +1,7 @@
 Comandos git para subir proyecto a github
 1-Crear proyecto en eclipse, de maven
 2-Crear un repositorio en github
-3-Abrir el Git bash en la carpeta donde se guardó mi proyecto
+3-Abrir el Git bash en la carpeta donde se guardï¿½ mi proyecto
 4-Comandos git:
 $ git init
 $ git remote add origin https://github.com/moiAbarca/gitPrueba1.git
@@ -16,3 +16,20 @@ $ git add .
 $ git commit -m "first commit"
 $ git push -u origin master
 
+*ChromeDriver for Mac*
+
+1- Download the ChromeDriver zip file from this location
+http://chromedriver.storage.googleapi...
+
+2- Download the correct file
+
+3- Unzip it 
+
+5- Navigate inside the unzip folder and copy the chromdriver in to /usr/local/bin folder.
+
+6-En selenium:
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+WebDriver driver = new ChromeDriver();ï»¿

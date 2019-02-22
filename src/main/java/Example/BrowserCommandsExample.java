@@ -14,6 +14,7 @@ public class BrowserCommandsExample {
         //System.setProperty("webdriver.chrome.driver", path);
         //WebDriver driver = new ChromeDriver();
     	
+    	//llamar al driver desde mac
     	WebDriver driver = new ChromeDriver();
     	
         driver.get("https://www.yapo.cl/");
