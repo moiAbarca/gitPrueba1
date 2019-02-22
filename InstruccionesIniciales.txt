@@ -17,16 +17,12 @@ $ git commit -m "first commit"
 $ git push -u origin master
 
 *ChromeDriver for Mac*
-
+https://www.youtube.com/watch?v=-stXyMIrsck&t=152s
 1- Download the ChromeDriver zip file from this location
 http://chromedriver.storage.googleapi...
-
 2- Download the correct file
-
 3- Unzip it 
-
 5- Navigate inside the unzip folder and copy the chromdriver in to /usr/local/bin folder.
-
 6-En selenium:
 
 import org.openqa.selenium.WebDriver;
