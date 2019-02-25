@@ -15,7 +15,6 @@ public class FindElementsExample {
     private final static String url = "https://www.yapo.cl/";
 
     public static void main(String[] args) throws Exception {
-    	//encontrar elementos, un DropDownList
     	
         //String path = Paths.get(System.getProperty("user.dir"), "Driver/chromedriver.exe").toString();
         //System.setProperty("webdriver.chrome.driver", path);
@@ -29,12 +28,63 @@ public class FindElementsExample {
         System.out.println(btnPublicar.getText());
         btnPublicar.click();
         
-        Thread.sleep(2000);
-        WebElement dwlCategoria;
-        dwlCategoria = driver.findElement(By.id("category_group"));
-        Select lista = new Select(dwlCategoria);
-        lista.selectByVisibleText("Motos");
+        Thread.sleep(1000);
+      //encontrar elementos, un DropDownList
+	        WebElement dwlCategoria;
+	        dwlCategoria = driver.findElement(By.id("category_group"));
+	        Select lista = new Select(dwlCategoria);
+	        lista.selectByVisibleText("Computadores y accesorios");
         
+        Thread.sleep(2000);
+        WebElement titulo = driver.findElement(By.name("subject"));
+        titulo.sendKeys("Prueba QA");
+        
+        WebElement descripcion = driver.findElement(By.name("body"));
+        descripcion.sendKeys("Esta es una descripción");
+        
+        WebElement byId = driver.findElement(By.id("price"));
+        byId.sendKeys("0303456");
+        
+        WebElement dwlRegion;
+        dwlRegion = driver.findElement(By.id("region"));
+        Select listaRegion = new Select(dwlRegion);
+        listaRegion.selectByVisibleText("Región Metropolitana");
+        
+        Thread.sleep(2000);
+        WebElement dwlComuna;
+        dwlComuna = driver.findElement(By.id("communes"));
+        Select listaComuna = new Select(dwlComuna);
+        listaComuna.selectByVisibleText("La Granja");
+        
+        Thread.sleep(2000);
+        List<WebElement>radioButton = driver.findElements(By.id("p_ad"));
+        //If u want to select the radio button
+        driver.findElement(By.id("p_ad")).click();
+        
+        WebElement nombre = driver.findElement(By.id("name"));
+        nombre.sendKeys("Juan");
+        
+        WebElement mail = driver.findElement(By.id("email"));
+        mail.sendKeys("JuanperezMaulen@gmail.com");
+        
+        WebElement mailConfirm = driver.findElement(By.id("email_confirm"));
+        mailConfirm.sendKeys("JuanperezMaulen@gmail.com");
+        
+        WebElement phone = driver.findElement(By.id("phone"));
+        phone.sendKeys("93070221");
+        
+        WebElement pass = driver.findElement(By.id("passwd"));
+        pass.sendKeys("quesucede");
+        
+        WebElement passConfirm = driver.findElement(By.id("passwd_ver"));
+        passConfirm.sendKeys("quesucede");
+        
+        WebElement check;
+        check = driver.findElement(By.xpath("//*[@class='iCheck-helper']"));
+        check.click();
+        
+        WebElement btnSubmit = driver.findElement(By.id("submit_create_now"));
+        btnSubmit.click();
         
         /*
         
