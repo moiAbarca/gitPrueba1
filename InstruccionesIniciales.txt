@@ -1,3 +1,6 @@
+Ruta de lo realizado:
+src/main/java-->example-->FindElementsExample.Java
+
 Comandos git para subir proyecto a github
 1-Crear proyecto en eclipse, de maven
 2-Crear un repositorio en github
@@ -28,4 +31,11 @@ http://chromedriver.storage.googleapi...
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-WebDriver driver = new ChromeDriver();﻿
+WebDriver driver = new ChromeDriver();
+
+*Para ocupar el Dislexicon*
+los archivos:
+-settings.xml﻿
+-settings-security.xml
+Se deben pegar en la ruta:
+C:\Users\UsuarioDelPC\.m2 
